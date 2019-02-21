@@ -10,6 +10,8 @@ end
 
 get '/happy-bday' do
   @name = params[:name]
+  @day = params[:day]
+  @month = params[:month]
   erb :wishes
 end
 

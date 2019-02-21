@@ -4,12 +4,29 @@
 
 <form action="/happy-bday">
 
-  <label for="name"> What is your name? <input type="text" name="name">
+  <label for="name"> What is your name?
+    <br><input type="text" name="name">
   </label>
+<div> When is your birthday?</div>
+  <label for="day"> day <input type="number" name="day"  style="width: 3em">
+  </label>
+  <label for="month"> month
+    <select id = "monthList">
+                 <option value = "Jan">January</option>
+                 <option value = "Feb">February</option>
+                 <option value = "Mar">March</option>
+                 <option value = "Apr">April</option>
+                 <option value = "May">May</option>
+                 <option value = "June">June</option>
+                 <option value = "July">July</option>
+                 <option value = "Aug">August</option>
+                 <option value = "Sept">September</option>
+                 <option value = "Oct">October</option>
+                 <option value = "Nov">November</option>
+                 <option value = "Dec">December</option>
+    </select>
+  </label>
+  </div>
+  <br><input type="submit" value="Submit">
 
-  <!-- <li><label for="bday"> When is your birthday? <input type="text" name="bday">
-  </label> -->
-  <input type="submit" value="Submit">
 </form>
-
-<!-- <h1>  Happy birthday  <%= @name%>! </h1> -->
