@@ -1,2 +1,22 @@
-<h1>  Happy birthday  <%= @name%>! </h1>
-<h1>  Your birthday is on  <%= @day%> of <%= @month%></h1>
+
+<%#
+# bday = Date.parse (day and month)
+# difference of today and bday %>
+<html>
+<body style="background-color:66CCFF;">
+  <style>
+    * {
+      font-family: arial;
+    }
+</style>
+<div align="center">
+
+<p>  Happy birthday  <%= @name%>! </p>
+<p>  Your birthday is on  <%= @day%> of <%= @month%></p>
+
+</div>
+</body>
+</html>
+
+<%# When the user submits the form, and depending on the current date, the app will either:
+wish the user happy birthday tell them how long they'll have to wait until their next birthday %>

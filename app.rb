@@ -1,3 +1,4 @@
+require 'date'
 require 'sinatra'
 set :session_birthday, 'birthday'
 
@@ -12,6 +13,9 @@ get '/happy-bday' do
   @name = params[:name]
   @day = params[:day]
   @month = params[:month]
+  # p @today = Date.today
+  time = Time.new
+  p @today = time.strftime("%d, %m")
   erb :wishes
 end
 

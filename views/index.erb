@@ -1,32 +1,45 @@
 
-<p> Hello there!</p>
+<html>
+<body style="background-color:66CCFF;">
+  <style>
+    * {
+      font-family: arial;
+    }
+</style>
+<div align="center">
+  <p><font size="14"> Hello there!</font></p>
+</div>
+<p>
+<div align="center">
+    <form action="/happy-bday">
+        <label for="name"> What's your name?
+          <br><input type="text" name="name">
+        </label></div>
+
+        <div align="center">When is your birthday?</div>
+          <div align="center">
+            <label for="day"> day: <input type="number" name="day" style="width: 3em" min="1" max="31"> </label>
+            <%# <label for="month"> month <input type="number" name="month"></label></div> %>
 
 
-<form action="/happy-bday">
-
-  <label for="name"> What is your name?
-    <br><input type="text" name="name">
-  </label>
-<div> When is your birthday?</div>
-  <label for="day"> day <input type="number" name="day"  style="width: 3em">
-  </label>
-  <label for="month"> month
-    <select id = "monthList">
-                 <option value = "Jan">January</option>
-                 <option value = "Feb">February</option>
-                 <option value = "Mar">March</option>
-                 <option value = "Apr">April</option>
-                 <option value = "May">May</option>
-                 <option value = "June">June</option>
-                 <option value = "July">July</option>
-                 <option value = "Aug">August</option>
-                 <option value = "Sept">September</option>
-                 <option value = "Oct">October</option>
-                 <option value = "Nov">November</option>
-                 <option value = "Dec">December</option>
+  <label for="month"> month: <select id = "monthList">
+                 <option value = "1">January</option>
+                 <option value = "2">February</option>
+                 <option value = "3">March</option>
+                 <option value = "4">April</option>
+                 <option value = "5">May</option>
+                 <option value = "6">June</option>
+                 <option value = "7">July</option>
+                 <option value = "8">August</option>
+                 <option value = "9">September</option>
+                 <option value = "10">October</option>
+                 <option value = "11">November</option>
+                 <option value = "12">December</option>
     </select>
   </label>
   </div>
-  <br><input type="submit" value="Submit">
-
+  <div align="center"><br><input type="submit" value="Go!" style="width: 26em">
+</div>
 </form>
+</body>
+</html>
