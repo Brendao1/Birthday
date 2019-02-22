@@ -9,10 +9,19 @@
 </style>
 <div align="center">
 
+<% if @bday == @today %>
 <p>  Happy birthday  <%= @name%>! </p>
-<p>  Your birthday is on  <%= @day%> of <%= @month%></p>
+<% end %>
+<p>  Your birthday is on <%= @day%> of <%= @month%></p>
 
 </div>
+
+<%= @name %>
+<br>
+<%= @today %>
+<br>
+<%= @bday %>
+
 </body>
 </html>
 
