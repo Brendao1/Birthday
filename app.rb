@@ -17,30 +17,10 @@ post '/happy-bday' do
   # @bday = Date.new(@day.to_i, @month.to_i)
 
   @bday = Date.new(CURRENT_YEAR, @month.to_i, @day.to_i)
-  # @bday = Date.new(@day.to_i, @month.to_i).strftime("%d, %m")
   @today = Date.today
-# @today = Date.today.strftime("%d, %m")
-  # @today.strftime("%d, %m")
+
+  @diff1 = (@bday - @today).to_i
+  @diff2 = 365 - (@today + @bday).to_i
+
   erb :wishes
-
-  # p @name
-  # p @day
-  # p @month
-  # p "The date today"
-  # # p @today = Date.today
-  # p @today.strftime("%d, %m")
-  # p "The birthday"
-  # p @bday
-
 end
-
-
-# use this to print out the variables....
-  # p @name
-  # p @day
-  # p @month
-  # p "The date today"
-  # # p @today = Date.today
-  # p @today.strftime("%d, %m")
-  # p "The birthday"
-  # p @bday

@@ -11,9 +11,10 @@
 
 <% if @bday == @today %>
 <p>  Happy birthday  <%= @name%>! </p>
+<% else %>
+
+<p>  Your birthday will be in <%= @diff1%> days, <%= @name%> :) </p>
 <% end %>
-
-
 </div>
 
 <%= @name %>
@@ -21,11 +22,7 @@
 <br> month: <%= @month %>
 <br> todday: <%= @today %>
 <br>bday: <%= @bday %>
+<br>diff: <%= @diff1 %>
 
 </body>
 </html>
-
-<%# When the user submits the form, and depending on the current date, the app will either:
-wish the user happy birthday tell them how long they'll have to wait until their next birthday %>
-
-<%# adding comment for commit %>
