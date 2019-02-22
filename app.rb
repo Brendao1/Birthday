@@ -22,3 +22,5 @@ end
    # p @name = params[:name]
    # p @last_name = params[:last_name]
    # p @age = params[:age]
+
+# <%# adding comment for commit %>
