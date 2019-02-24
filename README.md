@@ -1,9 +1,8 @@
-Birthday App built in Ruby.
+### Birthday App built in Ruby.
 
-Instructions: 
-Your challenge is to build a web app that will ask the user for a name and birthday.
+Interactive web app built in Ruby. 
 
-When the user submits the form, and depending on the current date, the app will either:
+Asks user for a name and birthday. When the user submits the form, and depending on the current date, the app either:
 
-- wish the user happy birthday
-- tell them how long they'll have to wait until their next birthday
+- wishes the user happy birthday
+- tells them how long they'll have to wait until their next birthday
